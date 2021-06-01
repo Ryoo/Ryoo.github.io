@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Curriculum Vitae</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+                <!-- Header -->
+                <header id="header">
+                <h1 id="logo"><a href="index.html"><b>Ryoo</b></a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutMe.html">About Me</a></li>
+                        <li>
+                            <a href="works.html">Works/Research</a>
+                            <ul>
+                                <li><a href="millstone.html">Master's Research</a></li>
+                                <li><a href="siontech.html">Military Conscription</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="publish.html" style="padding-right: 2em">Publications</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+			<!-- Main -->
+                <div>
+                    <div class="page-title col-4">
+                        <h3>Hi</h3>
+                        <h1>Curriculum Vitae</h1>
+                    </div>
+                    
+
+                    <div class="container">
+
+						<!-- Content -->
+							<section id="content">
+                                <div style="text-align: right;">
+                                    <ul class="actions">
+                                        <li onclick="toggleLanguage('English')"><a href="#">English</a></li>
+                                        <li onclick="toggleLanguage('Korean')"><a href="#">Korean</a></li>
+                                    </ul>
+                                </div>
+
+                                <iframe
+                                id ="CV" allowfullscreen frameborder="0"
+                                style="display:block;border:none;width:100%;height:100%;"
+                                src="images/pic07.jpg"
+                                scrolling="yes"></iframe>
+								<p style="text-align:right;opacity: 0.35;"><i>CV last updated: May 2020</i></p>
+                            </section>
+
+					</div>
+                </div>
+                
+
+
+			<!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands circle fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Googleplus</span></a></li>
+                    <li><a href="#" class="icon brands circle fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands circle fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+                    <li><a href="#" class="icon solid circle fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2020 Bo Hyung Ryoo. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+    </body>
+    
+    <script>
+        function toggleLanguage(language) {
+          let description = document.getElementById("cv");
+          if (language === "Korean") {
+            CV.src = "images/pic02.jpg";
+          }
+          else {
+            CV.src = "images/pic07.jpg";
+          }
+        }
+      </script>
+</html>
