@@ -2966,7 +2966,7 @@ input, select, textarea {
 	margin: auto;
 	padding: 2em 0;
 	text-align: justify;
-	width:60%;
+	width:65%;
 
 }
 
@@ -3245,7 +3245,6 @@ input, select, textarea {
 		background-attachment: fixed;
 		background-position: center center;
 		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		height: 100vh;
 		overflow: hidden;
 		position: relative;
@@ -3681,7 +3680,7 @@ input, select, textarea {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	opacity: .15;
+	opacity: .2;
 }
 .about-wrap {
 	width: 94%;
@@ -3725,7 +3724,7 @@ input, select, textarea {
 }
 
 .about-profile p {
-	color: #636363;
+	color: #000;
 }
 
 .about-profile .about-profile-bg {
@@ -3740,6 +3739,13 @@ input, select, textarea {
 
 
 
+.background-gradient {
+	background-image: linear-gradient(#ebebeb, rgb(255,255,255, 0.2), #ebebeb);
+	background-image: linear-gradient(to left, #ebebeb, rgb(255,255,255, 0.8), rgb(255,255,255, 1), rgb(255,255,255, 1), rgb(255,255,255, 0.8), #ebebeb);
+}
+#navPanel, #titleBar {
+	display: none;
+}
 
 
 
@@ -3758,7 +3764,7 @@ input, select, textarea {
 	.about-profile {padding-right: 5rem;}
 	.about-services {padding-left: 5rem;}}
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:980px) {
 	.about-profile {padding-right: 4rem;}
 	.about-services {padding-left: 4rem;}
 
@@ -3926,11 +3932,10 @@ input, select, textarea {
 			}
 
 		footer .copyright {
-			color: #1c1d26;
+			color: rgba(0, 0, 0, 0.4);
 			font-size: 0.8em;
 			line-height: 1em;
 			margin: 2em 0 0 0;
-			font-weight: bold;
 			padding: 0;
 			text-align: center;
 		}
@@ -3954,6 +3959,9 @@ input, select, textarea {
 				}
 
 	.mobile-appear {
+		display: none;
+	}
+	.phone-appear {
 		display: none;
 	}
 
@@ -4068,15 +4076,20 @@ input, select, textarea {
 				padding: 1.5em 0;
 			}
 
+
+		.page-title h1 {
+			margin: 0em;
+			line-height: 1.1em;
+		}
+
 	}
+	
 
 /* Small */
 
-	#navPanel, #titleBar {
-		display: none;
-	}
+	
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 768px) {
 
 		/* Basic */
 
@@ -4134,22 +4147,18 @@ input, select, textarea {
 
 		/* mainViewer */
 
-			.mainViewer {
-				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+			.mainViewer .image.main {
+				max-height: 60vh;
 			}
 
-				.mainViewer .image.main {
-					max-height: 60vh;
-				}
+			.mainViewer .content {
+				border-top-width: 0.2em !important;
+				padding: 3.25em 1.5em 1.25em 1.5em !important;
+			}
 
-				.mainViewer .content {
-					border-top-width: 0.2em !important;
-					padding: 3.25em 1.5em 1.25em 1.5em !important;
-				}
-
-				.mainViewer .content blockquote {
-					display: hidden;
-				}
+			.mainViewer .content blockquote {
+				display: hidden;
+			}
 
 
 		/* Header */
@@ -4344,7 +4353,7 @@ input, select, textarea {
 		/* Footer */
 
 			footer {
-				padding: 1em 1em;
+				padding: 2em 1em;
 			}
 
 	}
@@ -4354,7 +4363,7 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		/* Basic */
-
+		
 			html, body {
 				min-width: 320px;
 			}
@@ -4366,6 +4375,11 @@ input, select, textarea {
 			#face .face-content .face-image {
 				height: 12em;
 				width: 12em;
+			}
+
+			.page-title {
+				width:80%;
+			
 			}
 		/* Button */
 
@@ -4390,7 +4404,7 @@ input, select, textarea {
 		/* Footer */
 
 			footer {
-				padding: 0.5em 0.25em;
+				padding: 2em 0.25em;
 			}
 
 				footer .copyright {
@@ -4404,5 +4418,11 @@ input, select, textarea {
 						padding: 0;
 					}
 
+		.phone-appear {
+			display: contents;
+		}
+		.phone-hide {
+			display: none !important;
+		}
 	}
 
