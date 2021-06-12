@@ -3758,7 +3758,7 @@ input, select, textarea {
  * ------------------------------------------------------------------- */
  @media only screen and (max-width:1024px) {
 	#face .face-content {padding-top:10em}
-	#face .face-content header h3 {font-size: 1.5rem;}
+	#face .face-content header h3 {font-size: 1.3rem;}
 	#face .face-content header h1 {font-size: 4.8rem;}
 	#face .face-content header p {font-size: 1.2em; padding-bottom: 0;}
 	.about-profile {padding-right: 5rem;}
@@ -3822,7 +3822,7 @@ input, select, textarea {
 	#face .face-content {
 		padding: 2em 0.5em 4.875em 0.5em;
 	}
-	#face .face-content header h1 {font-size: 4em;}
+	#face .face-content header h1 {font-size: 3.5em;}
 	#face .face-content header h2 {font-size: 1.5em;}
 
 	#face .face-content .face-image {
@@ -3851,7 +3851,7 @@ input, select, textarea {
 	#face {
 		min-height: 654px;
 	}
-	#face .face-content header h1 {font-size: 3em;}
+	#face .face-content header h1 {font-size: 2.5em;}
 	#face .face-content header h2 {font-size: 1em;}
 	#face .face-content header p {font-size: 0.78em;}
 
