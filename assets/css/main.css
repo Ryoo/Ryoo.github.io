@@ -127,6 +127,13 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	.justify {
+		text-align: justify;
+	}
+	.text-shadow {
+		text-shadow: 0 0 1em lightgreen, 0 0 12px lightcoral
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #000;
 		font-weight: 300;
@@ -2964,7 +2971,7 @@ input, select, textarea {
 
 .page-title {
 	margin: auto;
-	padding: 2em 0;
+	padding: 2em 0 1em;
 	text-align: justify;
 	width:65%;
 
@@ -3586,6 +3593,7 @@ input, select, textarea {
 		display: inline-block;
 		list-style: none;
 		position: relative;
+		width: 90%;
 	}
 	
 	#face .face-section-links li {
@@ -3753,155 +3761,9 @@ input, select, textarea {
 
 
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * face
- * about 
- * ------------------------------------------------------------------- */
- @media only screen and (max-width:1024px) {
-	#face .face-content {padding-top:10em}
-	#face .face-content header h3 {font-size: 1.5rem;}
-	#face .face-content header h1 {font-size: 4.8rem;}
-	#face .face-content header p {font-size: 1.2em; padding-bottom: 0;}
-	.about-profile {padding-right: 5rem;}
-	.about-services {padding-left: 5rem;}}
 
-@media only screen and (max-width:980px) {
-	.about-profile {padding-right: 4rem;}
-	.about-services {padding-left: 4rem;}
 
-	#face {background-attachment: scroll;}
-	#face .goto-next {height: 7em;}
-	#face .face-content {
-		padding: 9em 0;
-		text-align: center;
-		margin-bottom: 0;}
-	#face .face-content header {
-		display: block;
-		margin: 0 0 2em 0;
-		text-align: center;}
-	#face .face-content .face-image {margin: 1em;}
-}
 
-@media only screen and (max-width:900px) {
-	#face .face-content {padding: 5em 1.5em 4.875em 1.5em;}
-	#face .face-content header h3 {font-size: 1.5rem;}
-	#face .face-content header h1 {font-size: 4.8rem;}
-	#face .face-content header p {font-size: 1.2em;}
-
-	
-	.face-content-tablecell h1 br {display: none;}
-	.face-content-tablecell .face-section-links {margin: 4.2rem 0 0 0;}
-	.face-content-tablecell .face-section-links li {font-size: 1.3rem;}
-	.face-content-tablecell .face-section-links a {font-size: 1.6rem;}
-	.scroll-icon {right: 15px;}
-	.about-content {padding-top: 0;}
-	.about-wrap {padding: 0; width: 100%;}
-	.about-profile-bg {display: none;}
-	.about-profile, .about-services {
-		float: none;
-		width: 100%;
-		padding-top: 10.8rem;
-		padding-left: 45px;
-		padding-right: 45px;
-	}
-	.about-profile .intro, .about-services .intro {text-align: center;}
-	.about-profile {padding-bottom: 9rem;}
-	.about-profile .about-profile-bg {display: block; width: 100%; height: 100%;}
-}
-
-@media only screen and (max-width:600px) {
-
-	#face {
-		box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: calc(100vh - 44px);
-	}
-
-	#face:before {
-		height: calc(100vh - 44px);
-	}
-
-	#face .face-content {
-		padding: 2em 0.5em 4.875em 0.5em;
-	}
-	#face .face-content header h1 {font-size: 4em;}
-	#face .face-content header h2 {font-size: 1.5em;}
-
-	#face .face-content .face-image {
-		height: 9em;
-		width: 9em;
-	}
-
-	.scroll-icon {
-		right: 10px;
-	}
-
-	.about-profile,
-	.about-services {
-		padding-left: 35px;
-		padding-right: 35px;
-	}
-	
-}
-
-@media only screen and (max-width:400px) {
-
-	#face .content {
-		padding: 3em 1.5625em 5.25em 1.5625em;
-	}
-	
-	#face {
-		min-height: 654px;
-	}
-	#face .face-content header h1 {font-size: 3em;}
-	#face .face-content header h2 {font-size: 1em;}
-	#face .face-content header p {font-size: 0.78em;}
-
-	.face-content-tablecell .face-bottom-text {
-		padding-right: 0;
-	}
-
-	.face-content-tablecell h3 {
-		font-size: 1.4rem;
-	}
-
-	.face-content-tablecell h1 {
-		font-size: 3.2rem;
-	}
-
-	.face-content-tablecell .face-section-links {
-		margin: 1.5rem 0 0 0;
-	}
-	
-	.about-profile,
-	.about-services {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-
-	.about-services {
-		text-align: center;
-	}
-
-	.about-services ul.services .icon-wrap {
-		position: static;
-		margin-bottom: .6rem;
-	}
-
-	.about-services ul.services .icon-wrap i {
-		font-size: 6rem;
-	}
-
-	.about-services ul.services .service-item {
-		padding-left: 0;
-		margin-bottom: 3rem;
-	}
-
-	.about-services ul.services .service-item h4 {
-		margin-bottom: 1.5rem;
-	}
-
-}
 
 /* Footer */
 
@@ -4014,6 +3876,23 @@ input, select, textarea {
 
 	}
 
+
+
+	@media screen and (max-width:1110px) {
+		#face .face-content {
+			padding-top:8em;
+			text-align: center;
+		}
+		#face .face-content header {
+			display: inline-block;
+			margin: 0 0 2em 0;
+			text-align: center;
+			width: 95%;
+		}
+		.about-profile {padding-right: 5rem;}
+		.about-services {padding-left: 5rem;}}
+
+
 /* Medium */
 
 	@media screen and (max-width: 980px) {
@@ -4023,7 +3902,26 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+		
 
+			.about-profile {padding-right: 4rem;}
+			.about-services {padding-left: 4rem;}
+
+			#face {background-attachment: scroll;}
+			#face .face-content {
+				padding-top: 7em;
+				text-align: center;
+				margin-bottom: 0;}
+			#face .face-content header {
+				display: inline-block;
+				margin: 0 0 2em 0;
+				text-align: center;
+				width: 95%;}
+			#face .face-content .face-image {margin: 1em;}
+
+
+
+			
 		/* mainViewer */
 
 			.mainViewer {background-attachment: scroll; height: auto;}
@@ -4085,6 +3983,37 @@ input, select, textarea {
 		}
 
 	}
+
+
+	@media only screen and (max-width:900px) {
+		#face .face-content {padding: 5em 1.5em 3em 1.5em;}
+		#face .face-content header h3 {font-size: 2rem;}
+		#face .face-content header h1 {font-size: 4.8rem;}
+		#face .face-content header p {font-size: 1.2em;}
+	
+		
+		.face-content-tablecell h1 br {display: none;}
+		.face-content-tablecell .face-section-links {margin: 4.2rem 0 0 0;}
+		.face-content-tablecell .face-section-links li {font-size: 1.3rem;}
+		.face-content-tablecell .face-section-links a {font-size: 1.6rem;}
+		.scroll-icon {right: 15px;}
+		.about-content {padding-top: 0;}
+		.about-wrap {padding: 0; width: 100%;}
+		.about-profile-bg {display: none;}
+		.about-profile, .about-services {
+			float: none;
+			width: 100%;
+			padding-top: 10.8rem;
+			padding-left: 45px;
+			padding-right: 45px;
+		}
+		.about-profile .intro, .about-services .intro {text-align: center;}
+		.about-profile {padding-bottom: 9rem;}
+		.about-profile .about-profile-bg {display: block; width: 100%; height: 100%;}
+	}
+
+		
+	
 	
 
 /* Small */
@@ -4169,6 +4098,9 @@ input, select, textarea {
 				display: none;
 			}
 
+			.about-profile, .about-services {
+				padding-top: 5rem;
+			}
 
 
 		/* Nav */
@@ -4360,6 +4292,28 @@ input, select, textarea {
 
 	}
 
+
+
+	@media screen and (max-width:620px) {
+
+		#face {
+			box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+			min-height: calc(100vh - 44px);
+		}
+	
+		#face:before {height: calc(100vh - 44px);}
+	
+		#face .face-content {
+			padding: 2em 0.5em 2.5em 0.5em;
+		}
+		#face .face-content header {margin-bottom: 1.5em;}
+		#face .face-content header h1 {font-size: 4em;}
+		#face .face-content header h3 {font-size: 1.8em;}
+		#face .face-content header p {font-size: 1em;}
+		.scroll-icon {right: 10px;}
+		.about-profile, .about-services { padding-left: 35px; padding-right: 35px;}
+	}
+
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
@@ -4374,10 +4328,8 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
-			#face .face-content .face-image {
-				height: 12em;
-				width: 12em;
-			}
+			#face .face-content header h1 {font-size: 3.5em;}
+			#face .face-content header h3 {font-size: 1.5em;}
 
 			.page-title {
 				width:80%;
@@ -4439,3 +4391,30 @@ input, select, textarea {
 		}
 	}
 
+
+
+	@media only screen and (max-width:420px) {
+
+		#face .content {
+			padding: 3em 1.5625em 5.25em 1.5625em;
+		}
+		
+		#face {
+			min-height: 654px;
+		}
+		#face .face-content header h1 {font-size: 3em;}
+		#face .face-content header h3 {font-size: 1.2em;}
+		#face .face-content header p {font-size: 0.78em;}
+	
+		.face-content-tablecell .face-bottom-text {padding-right: 0;}
+		.face-content-tablecell h3 {font-size: 1.4rem;}
+		.face-content-tablecell h1 {font-size: 3.2rem;}
+		.face-content-tablecell .face-section-links {margin: 1.5rem 0 0 0;}
+		.about-profile, .about-services {padding-left: 25px; padding-right: 25px;}
+		.about-services {text-align: center;}
+		.about-services ul.services .icon-wrap {position: static; margin-bottom: .6rem;}
+		.about-services ul.services .icon-wrap i {font-size: 6rem;}
+		.about-services ul.services .service-item {padding-left: 0; margin-bottom: 3rem;}
+		.about-services ul.services .service-item h4 {margin-bottom: 1.5rem;}
+	
+	}
