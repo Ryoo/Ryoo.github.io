@@ -2905,7 +2905,7 @@ input, select, textarea {
 
 	.skillBar{
 		background-color: #949494;
-		width: 85%;
+		width: 95%;
 		padding: 1px;
   		border-radius: 15px;
   		margin-bottom: 5px;
@@ -2921,10 +2921,10 @@ input, select, textarea {
 		display: inline-block;
   		padding: 0px 0px 0px 15px;
   		border-radius: inherit;
-  		animation: skillbar-load 2s 0s;
-  		-webkit-animation: skillbar-load 2s 0s;
-  		-moz-animation: skillbar-load 2s 0s;
-  		-o-animation: skillbar-load 2s 0s;
+  		animation: skillbar-load ease-in-out;
+  		-webkit-animation: skillbar-load 3s ease-in-out;
+  		-moz-animation: skillbar-load ease-in-out;
+  		-o-animation: skillbar-load ease-in-out;
 	}
 
 	.skillBar.front::before{background-color: #ffcc33;}
@@ -3219,33 +3219,97 @@ input, select, textarea {
 
 /* Lab Skill section */
 
+
+.labSkill-Container {
+	display:flexbox;
+	overflow: auto;
+}
+
+.labSkill-Container h2:hover {color: coral; opacity: 0.6; transition: color 0.2s ease-in-out; border-color:gray;}
+.labSkill-Container h3:hover {color: coral; opacity: 0.4; transition: color 0.2s ease-in-out;}
+
 .labSkill {
-	background-color: #EBEBEB;
 	color:#000;
 	cursor:pointer;
-	padding: 10px;
 	width: 100%;
-	border: none;
 	text-align: left;
 	outline: none;
 	font-size:inherit;
-	font-weight:lighter;
 }
 
-.active, .labSkill:hover{
-	color:#656565
-}
-.labContent {
-	margin-left: 5em; 
-	font-size: small; 
-	font-weight: bold;
-	padding: 0 12px;
-	display: none;
-	overflow: hidden;
-}
-.labSkill b {
+
+
+b.labSkill {
 	font-weight: bolder;
 }
+
+h2.labSkill {
+	font-size: inherit;
+	padding: 5px;
+	border: solid;
+	text-align: center;
+	margin: 2em 0;
+	padding: 0.2em;
+}
+
+h2.active-labSkill {
+	color: coral;
+	font-size: 1.3em;
+	transition: font-size 0.25s ease-in;
+	margin: 0.5em 0;
+	border-color: #818181;
+	padding: 0.2em;
+}
+
+
+
+.labContent {
+	margin-left: 2em; 
+	font-size: inherit; 
+	font-weight: inherit;
+	display: none;
+	overflow: hidden;
+	animation: labSlide 0.4s ease-out 0.1s forwards;
+	-o-animation: labSlide 0.4s ease-out 0.1s forwards;
+	-moz-animation: labSlide 0.4s ease-out 0.1s forwards;
+	-webkit-animation: labSlide 0.4s ease-out 0.1s forwards;
+	opacity: 0;
+	transform: translateY(-5%);
+}
+
+@keyframes labSlide{from {opacity: 0; transform: translateY(-5%);} to {opacity: 1; transform: translateY(0);}}
+@-o-keyframes labSlide{from {opacity: 0; transform: translateY(-5%);} to {opacity: 1; transform: translateY(0);}}
+@-moz-keyframes labSlide{from {opacity: 0; transform: translateY(-5%);} to {opacity: 1; transform: translateY(0);}}
+@-webkit-keyframes labSlide{from {opacity: 0; transform: translateY(-5%);} to {opacity: 1; transform: translateY(0);}}
+
+h3.labContent {
+	font-size: inherit;
+}
+
+h3.active-labSkill {
+	color: coral;
+	font-size: 1.2em;
+	opacity: 0.6;
+	margin-bottom: 0.5em;
+	transition: font-size 0.35s ease-out;;
+}
+
+h4.labContent {
+	font-size: inherit;
+}
+.labContent p {
+	margin-bottom: 1em;
+}
+p.labContent {
+	font-size: inherit;
+}
+.labContent ul {
+	margin-bottom: 1em;
+}
+li.labContent {
+	font-size: inherit;
+}
+
 /* mainViewer */
 
 	.mainViewer {
@@ -3964,7 +4028,7 @@ input, select, textarea {
 			}
 
 			.mobile-hide {
-				display: none;
+				display: none !important;
 			}
 			.mobile-appear {
 				display: contents;
