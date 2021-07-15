@@ -10,119 +10,131 @@
 	<body class="is-preload">
 		<div id="page-wrapper">
 
-            <!-- Header -->
+			<!-- Header -->
             <header id="header">
-            <h1 id="logo"><a href="index.html"><b>Ryoo</b></a></h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutMe.html">About Me</a></li>
-                    <li>
-                        <a href="works.html">Works/Research</a>
-                        <ul>
-                            <li><a href="millstone.html">Master's Research</a></li>
-                            <li><a href="siontech.html">Military Conscription</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="publish.html" style="padding-right: 2em">Publications</a></li>
-                </ul>
-            </nav>
+                <h1 id="logo"><a href="index.html"><b style="color: white; font-family: fantasy;">Ryoo</b></a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutMe.html">About Me</a></li>
+                        <li>
+                            <a href="works.html">Works/Research</a>
+                            <ul>
+                                <li><a href="millstone.html">Master's Research</a></li>
+                                <li><a href="siontech.html">Military Conscription</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="publish.html" style="padding-right: 2em">Published</a></li>
+                    </ul>
+                </nav>
             </header>
 
 			<!-- Main -->
-                <div>
+				<div>
                     <div class="page-title col-4">
-                        <h3>Hi</h3>
-                        <h1>My Interests</h1>
-                    </div>
-                    
-
-                    <div class="container">
+						<h3><span class="icon solid fas fa-heart"></span></h3>
+						<h1>My Interests</h1>
+					</div>
+					<div class="container">
 
 						<!-- Content -->
 							<section id="content">
-							  
-                                <div class="slideshow_container" style="width: 100%; margin: 0 0 2em 0">
-                                  <img class="mySlides" src="./images/pic01.jpg" style="width:100%">
-                                  <img class="mySlides" src="./images/_DSC5618b2.jpg" style="width:100%">
-                                  <img class="mySlides" src="./images/pic08.jpg" style="width:100%">
-                                  <div class="slide_container " 
-                                  style="text-align:center!important; margin-top:16px,!important; margin-bottom:16px!important; 
-                                  font-size:18px!important; color:#fff; width:100%;
-                                  position:absolute; left:50%; bottom:0; transform: translate(-50%, 0%);-ms-transform:translate(-50%, 0);"
-                                  >
-                                    <div class="slide-prev" onclick="plusDivs(-1)">&#10094;</div>
-                                    <div class="slide-next" onclick="plusDivs(1)">&#10095;</div>
-                                    <span class="dot demo dot-border dot-transparent dot-hover-white" onclick="currentDiv(1)"></span>
-                                    <span class="dot demo dot-border dot-transparent dot-hover-white" onclick="currentDiv(2)"></span>
-                                    <span class="dot demo dot-border dot-transparent dot-hover-white" onclick="currentDiv(3)"></span>
-                                  </div>
-                                </div>
-                            
-                                <script>
-                                var slideIndex = 1;
-                                showDivs(slideIndex);
-                            
-                                function plusDivs(n) {
-                                  showDivs(slideIndex += n);
-                                }
-                            
-                                function currentDiv(n) {
-                                  showDivs(slideIndex = n);
-                                }
-                            
-                                function showDivs(n) {
-                                  var i;
-                                  var x = document.getElementsByClassName("mySlides");
-                                  var dots = document.getElementsByClassName("demo");
-                                  if (n > x.length) {slideIndex = 1}
-                                  if (n < 1) {slideIndex = x.length}
-                                  for (i = 0; i < x.length; i++) {
-                                        x[i].style.display = "none";  
-                                  }
-                                  for (i = 0; i < dots.length; i++) {
-                                        dots[i].className = dots[i].className.replace(" dot-white", "");
-                                  }
-                                  x[slideIndex-1].style.display = "block";  
-                                  dots[slideIndex-1].className += " dot-white";
-                                }
-                                </script>
-                                
-                                
-                                <h3>Introducing Myself</h3>
-								<p> 
-                                    
-                                    I was born in Daejeon, South Korea. For those who are not from South Korea and not familiar with Dajeon, Dajeon is a city surrounded by mountains and it has many Korea's national science facilities.
-                                    Also having national science museum and other science/technology related places, Daejeon was a great place to grow my passion and interest in science. 
-                                    At the end of my middle school, I wanted to study abroad in United States. I wanted to be able to speak English fluently, so that I can conduct research with the world-class researchers while learning about the other side of the world.
-                                    It was not easy to convince my parents, but they had faith in me. 
-                                    With my parents full support, I was able to live in many places and educations in U.S. including Utah, Connecticut and Pennylvania, where I was able to finish my Masters degree under guidence of Dr. Millstone in University of Pittsburgh.
-                                </p>
-								<p>As a Korean man, I'm currently back home serving my military conscription. 
-                                    Fortunately, I was able to put in use of my education as an alternative civil sevice in lieu of physically training to be a foot soldier. 
-                                    I am researching in a small-sized environmental company <a href="siontech.html">Siontech Co., Ltd.</a> 
-                                    My work focuses on water purification technology, which I hope can be used to help those in need of clean water and also keep the envrionment healthy.
-                                    Working as a researcher for my service, I get after work-time to myself with some restrictions.
-                                    I like to spend those times working on different projects and learning new things.
-                                    I also enjoy playing hockey and other sports, as well as playing video games.
 
-                                </p>
 
-                            
-                            <div class="box alt">
-                                <div class="row gtr-50 gtr-uniform">
-                                    <div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                                    <div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                                    <div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+                            <div>
+                                <div class="carousel">
+                                    <ul class="slides">
+                                        <input type="radio" name="radio-buttons" id="caro-img-1" checked />
+                                        <li class="slide-container">
+                                            <div class="slide-image"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg"></div>
+                                            <div class="carousel-controls">
+                                                <label for="caro-img-5" class="prev-slide"><span>&lsaquo;</span></label>
+                                                <label for="caro-img-2" class="next-slide"><span>&rsaquo;</span></label>
+                                            </div></li>
+                                        <input type="radio" name="radio-buttons" id="caro-img-2" />
+                                        <li class="slide-container">
+                                            <div class="slide-image"><img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true"></div>
+                                            <div class="carousel-controls">
+                                                <label for="caro-img-1" class="prev-slide"><span>&lsaquo;</span></label>
+                                                <label for="caro-img-3" class="next-slide"><span>&rsaquo;</span></label>
+                                            </div></li>
+                                        <input type="radio" name="radio-buttons" id="caro-img-3" />
+                                        <li class="slide-container">
+                                            <div class="slide-image"><img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg"></div>
+                                            <div class="carousel-controls">
+                                                <label for="caro-img-2" class="prev-slide"><span>&lsaquo;</span></label>
+                                                <label for="caro-img-4" class="next-slide"><span>&rsaquo;</span></label>
+                                            </div></li>
+                                        <input type="radio" name="radio-buttons" id="caro-img-4" />
+                                        <li class="slide-container">
+                                            <div class="slide-image"><img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg"></div>
+                                            <div class="carousel-controls">
+                                                <label for="caro-img-3" class="prev-slide"><span>&lsaquo;</span></label>
+                                                <label for="caro-img-5" class="next-slide"><span>&rsaquo;</span></label>
+                                            </div></li>
+                                        <input type="radio" name="radio-buttons" id="caro-img-5" />
+                                        <li class="slide-container">
+                                            <div class="slide-image"><img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg"></div>
+                                            <div class="carousel-controls">
+                                                <label for="caro-img-4" class="prev-slide"><span>&lsaquo;</span></label>
+                                                <label for="caro-img-1" class="next-slide"><span>&rsaquo;</span></label>
+                                            </div></li>
+                                        <div class="carousel-dots">
+                                            <label for="caro-img-1" class="carousel-dot" id="caro-img-dot-1"></label>
+                                            <label for="caro-img-2" class="carousel-dot" id="caro-img-dot-2"></label>
+                                            <label for="caro-img-3" class="carousel-dot" id="caro-img-dot-3"></label>
+                                            <label for="caro-img-4" class="carousel-dot" id="caro-img-dot-4"></label>
+                                            <label for="caro-img-5" class="carousel-dot" id="caro-img-dot-5"></label>
+                                        </div>
+                                    </ul>
                                 </div>
-                                <br>
                             </div>
 
 
-                            <h3><blockquote>Nobody ever figures out what life is all about, and it doesn't matter. Explore the world. 
-                                <p style="text-align:right; margin:0em;"> &mdash; Richard Feynmann</p></blockquote></h3>
+                                <h3>Introducing Myself</h3>
+								<p class="justify"> 
+                                    I was born in Daejeon, South Korea. Being a decent size city known for science and technology, Daejeon was a great place to grow my passion and interest in science. 
+                                    Before graduating middle school, I wanted to pursue my passion for science by studying abroad in United States. 
+                                    To me, ability to speak fluent English is important both in learning the world outside of my own and conducting research with the world-class researchers.
+                                    With my parents full support, I was able to live in many places in U.S. including Utah, Connecticut and Pennylvania. During those times in U.S., I was able to finish my Masters degree under guidence of Dr. Millstone in University of Pittsburgh.
+                                </p>
+								<p class="justify"> 
+                                    As a male citizen of Korea, I'm currently back home serving my mandatory military conscription. 
+                                    Fortunately, I was able to put in use of my education as an alternative civil sevice in lieu of physically training to be a foot soldier. 
+                                    I am researching in a small-sized environmental company <a href="siontech.html">Siontech Co., Ltd.</a> 
+                                    My work focuses on water purification and plastic recycle technolgies.
+                                    Working as a researcher for my service, I get after work-time to myself with some restrictions.
+                                    I like to spend those times working on different projects and learning new things.
+                                    I also enjoy playing hockey and other sports, as well as playing video games.
+                                </p>
+                                <h3><blockquote>It teaches us first by tutors and books, to learn that which is already known to others, and then by the light and methods which belong to science to learn for ourselves and for others; so making a fruitful return to man in the future for that which we have obtained from the men of the past.
+                                    <cite style="text-align: right;"> Michael Faraday</cite>
+                                </blockquote></h3>
+                                <p class="justify"> 
+                                    During the time I was abroad, I was fortunate to encounter many brilliant people, diverse cultures, and fascinating body of thoughts.
+                                    I'm hoping that once I fulfill my service to my country, I get to countinue learn about the world and meet more great minds.
+                                    That includes traveling around the world, live in differnt place, interacting with people from all types of background. 
+                                </p>
+                                
+                                <!-- <p>
+                                    Learning about different cultures, people, and new scientific discoveries are my passion.
+                                    Hopefully one day, I can be part of those who lived to expand our knowledge and build better future.
+                                    Just as I was inspired by those who came before me, I would love to inspire others.
+                                </p> -->
                             
+
+                                <section style="text-align:center; padding-bottom: 4em">
+ 
+                                    <a href="interests.html" class="button"> More about my interests</a>
+
+                                </section>
+
+
+                            </section>
+
+
+
 
 					</div>
 				</div>
@@ -142,7 +154,6 @@
                     <li>&copy; 2021 Bo Hyung Ryoo. All rights reserved.</li>
                 </ul>
             </footer>
-
 		</div>
 
 		<!-- Scripts -->
