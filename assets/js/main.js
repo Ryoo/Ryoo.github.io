@@ -40,7 +40,7 @@
 			$(
 				'<div id="titleBar">' +
 					'<a href="#navPanel" class="toggle"></a>' +
-					'<span class="title"><a href="index.html" style="color:#FFF; font-size:18px; font-family: fantasy">Ryoo</a></span>' +
+					'<span class="title"><a href="index.html" style="color:#FFF; font-size:18px; font-family: fantasy, cursive;">Ryoo</a></span>' +
 				'</div>'
 			)
 				.appendTo($body);
