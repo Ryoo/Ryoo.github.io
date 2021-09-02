@@ -42,19 +42,30 @@
 
 						<!-- Content -->
 							<section id="content">
-                                <div style="text-align: right;">
+                                
+                                <div id="pdfContainer" style="position: relative; width: 100%;overflow: hidden;padding-top: 100%; border: slategrey;">
+                                    <iframe
+                                    id ="CV" allowfullscreen frameborder="0"
+                                    style="  position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    border: none;"
+                                    src="assets/docs/CV_Ryoo_2021_noNumber.pdf"
+                                    scrolling="yes"></iframe>
+                                </div>
+                                <!-- <div style="text-align: right;">
                                     <ul class="actions">
                                         <li onclick="toggleLanguage('English')"><a href="#">English</a></li>
                                         <li onclick="toggleLanguage('Korean')"><a href="#">Korean</a></li>
+                                        <li onclick="toggleLanguage('Korean')"><a href="#">Concise</a></li>
                                     </ul>
-                                </div>
-
-                                <iframe
-                                id ="CV" allowfullscreen frameborder="0"
-                                style="display:block;border:none;width:100%;height:100%;"
-                                src="images/pic07.jpg"
-                                scrolling="yes"></iframe>
-								<p style="text-align:right;opacity: 0.35;"><i>CV last updated: May 2020</i></p>
+                                </div> -->
+                                
+								<p style="text-align:right;opacity: 0.35;"><i>CV last updated: Sep 2021</i></p>
                             </section>
 
 					</div>
@@ -93,12 +104,15 @@
     
     <script>
         function toggleLanguage(language) {
-          let description = document.getElementById("cv");
+          let description = document.getElementById("CV");
           if (language === "Korean") {
             CV.src = "images/pic02.jpg";
           }
+          if (language === "Concise") {
+            CV.src = "assets/docs/CV_Ryoo_2021_concise.pdf"
+          }
           else {
-            CV.src = "images/pic07.jpg";
+            CV.src="assets/docs/CV_Ryoo_2021_noNumber.pdf";
           }
         }
       </script>
