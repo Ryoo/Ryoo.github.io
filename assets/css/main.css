@@ -2737,7 +2737,7 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url("images/overlay.png");
+			/* background-image: url("images/overlay.png"); */
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -3343,7 +3343,7 @@ li.labContent {
 		.mainViewer:nth-last-of-type(4) {z-index: 4;}
 
 		.mainViewer:before {
-			background-image: url("images/overlay.png");
+			/* background-image: url("images/overlay.png"); */
 			content: '';
 			display: block;
 			height: 100%;
@@ -3762,7 +3762,7 @@ li.labContent {
 	left: 0;
 	height: 100%;
 	width: 50%;
-	background-image: url(../../images/img05282021/IMG_0515.jpeg);
+	background-image: url("../../images/img05282021/IMG_0515.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
