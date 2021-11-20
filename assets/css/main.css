@@ -3012,6 +3012,7 @@ input:checked + .slide-container .nav label { display: block; }
 	font-family: "librebaskerville-bold", serif;
 	font-size: 3.3rem;
 	line-height: 1.455;
+	margin-bottom: 0.1em;
 	color: #000000
 }
 
