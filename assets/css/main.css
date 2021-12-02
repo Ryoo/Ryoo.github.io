@@ -2597,6 +2597,14 @@ input, select, textarea {
 					background: #1B84B9;
 					color: #fff
 				}
+			.icon.circle.fa-whatsapp {
+				background: #25D366;
+				color: #fff;
+			}
+				.icon.circle.fa-whatsapp:hover {
+					background: #35E376;
+					color: #fff
+				}
 
 			.icon.circle.fa-instagram {
 				background: #c13584;
