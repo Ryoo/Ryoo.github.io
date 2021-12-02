@@ -2799,7 +2799,7 @@ ul.slides {
     height: 600px;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow:hidden;
     list-style: none;
 }
 
@@ -4132,10 +4132,7 @@ li.labContent {
 
 		/* Section/Article */
 
-			header p br {
-				display: none;
-			}
-
+		
 			header h2 + p {
 				font-size: 1em;
 			}
@@ -4504,3 +4501,11 @@ li.labContent {
 		.about-services ul.services .service-item h4 {margin-bottom: 1.5rem;}
 	
 	}
+
+
+
+
+.face-banner {position: relative;
+				width: 100%;
+				background-color: #E1E1E1;
+				opacity: 20%;}
