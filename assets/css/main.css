@@ -3033,6 +3033,12 @@ input:checked + .slide-container .nav label { display: block; }
 	margin: 0 0 0 .3rem;
 }
 
+.page-title hr {
+	border-width: 0;
+	margin: 0.5em 0 1.5em 0;
+	border-bottom: solid 2px rgb(76, 36, 5, 0.3);
+}
+
 
 
 
