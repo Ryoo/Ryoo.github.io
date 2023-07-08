@@ -4026,6 +4026,10 @@ li.labContent {
 				width: 95%;}
 			#face .face-content .face-image {margin: 1em;}
 
+			#face .face-content header h1 {font-size: 4.8rem;}
+			#face .face-content header h3 {font-size: 2.5rem;}
+			#face .face-content header p {font-size: 0.7em;}
+
 
 
 			
@@ -4096,9 +4100,10 @@ li.labContent {
 
 	@media only screen and (max-width:900px) {
 		#face .face-content {padding: 5em 1.5em 3em 1.5em;}
-		#face .face-content header h3 {font-size: 2rem;}
+		
 		#face .face-content header h1 {font-size: 4.8rem;}
-		#face .face-content header p {font-size: 1.2em;}
+		#face .face-content header h3 {font-size: 2.5rem;}
+		#face .face-content header p {font-size: 0.7em;}
 	
 		
 		.face-content-tablecell h1 br {display: none;}
@@ -4152,6 +4157,10 @@ li.labContent {
 			h4 {
 				font-size: 1em;
 			}
+
+			/* #face .face-content header h1 {font-size: 3.5em;} */
+			#face .face-content header h3 {font-size: 2.5em;}
+			#face .face-content header p {font-size: 0.7em;}
 
 		/* Section/Article */
 
@@ -4207,6 +4216,7 @@ li.labContent {
 			.about-profile, .about-services {
 				padding-top: 5rem;
 			}
+			
 
 
 		/* Nav */
@@ -4420,8 +4430,8 @@ li.labContent {
 		}
 		#face .face-content header {margin-bottom: 1.5em;}
 		#face .face-content header h1 {font-size: 4em;}
-		#face .face-content header h3 {font-size: 1.8em;}
-		#face .face-content header p {font-size: 1em;}
+		#face .face-content header h3 {font-size: 2.2em;}
+		#face .face-content header p {font-size: 0.7em;}
 		.scroll-icon {right: 10px;}
 		.about-profile, .about-services { padding-left: 35px; padding-right: 35px;}
 	}
@@ -4441,7 +4451,8 @@ li.labContent {
 			}
 
 			#face .face-content header h1 {font-size: 3.5em;}
-			#face .face-content header h3 {font-size: 1.5em;}
+			#face .face-content header h3 {font-size: 1.8em;}
+			#face .face-content header p {font-size: 0.7em;}
 
 			.page-title {
 				width:80%;
@@ -4515,12 +4526,12 @@ li.labContent {
 			min-height: 654px;
 		}
 		#face .face-content header h1 {font-size: 3em;}
-		#face .face-content header h3 {font-size: 1.2em;}
-		#face .face-content header p {font-size: 0.78em;}
+		#face .face-content header h3 {font-size: 1.4em;}
+		#face .face-content header p {font-size: 0.7em;}
 	
 		.face-content-tablecell .face-bottom-text {padding-right: 0;}
-		.face-content-tablecell h3 {font-size: 1.4rem;}
 		.face-content-tablecell h1 {font-size: 3.2rem;}
+		.face-content-tablecell h3 {font-size: 1.4rem;}
 		.face-content-tablecell .face-section-links {margin: 1.5rem 0 0 0;}
 		.about-profile, .about-services {padding-left: 25px; padding-right: 25px;}
 		.about-services {text-align: center;}
